@@ -19,6 +19,32 @@
 *.tar.gz
 *.rar
 
+#====================================// S
+
+# Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+target/
+bin/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env/
+
+# IDE / Editor
+.idea/
+*.iml
+.vscode/
+
+#====================================// E
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
