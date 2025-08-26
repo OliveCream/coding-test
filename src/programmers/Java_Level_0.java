@@ -6,9 +6,19 @@ public class Java_Level_0 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		//짝수 홀수 개수
 		//p_120824(new int[]{1,1,2,2,2});
+		
+		//피자 나눠 먹기(1)
 		//p_120814(22);
+		
+		//세균 증식
 		//p_120910(7,15);
+		
+		//최대값 만들기(1)
+		p_120847(new int[]{10,1,23,42,22});
+		
+		
 	}
 	
 	//----------------------------------------------------------------------------- 2025-08-21(목)
@@ -56,6 +66,30 @@ public class Java_Level_0 {
             answer *= 2;
         }
         System.out.println("[p_120814] 세균 수 : " + answer + "개");
+    }
+	
+	//-----------------------------------------------------------------------------
+	//최대값 만들기(1)
+	public static String p_120847(int[] numbers) {
+		String msg = "";
+        int answer = 0;
+        int max1 = Integer.MIN_VALUE;
+        int max2 = Integer.MIN_VALUE;
+        
+        for(int i=0; i<numbers.length; i++){
+            if(numbers[i] > max1){
+                max2 = max1;
+                max1 = numbers[i];
+            }else if(numbers[i] > max2){
+                max2 = numbers[i];
+            }
+        }
+        answer = max1*max2;
+        msg = "[p_120847] 최대값들의 곱 : " + answer ;
+        System.out.println("[p_120847] 최대값들의 곱 : " + answer);
+        
+        return msg;
+        
     }
 
 }
