@@ -16,8 +16,10 @@ public class Java_Level_0 {
 		//p_120910(7,15);
 		
 		//최대값 만들기(1)
-		p_120847(new int[]{10,1,23,42,22});
+		//p_120847(new int[]{10,1,23,42,22});
 		
+		//자릿수 더하기
+		//p_120906(192803);
 		
 	}
 	
@@ -70,8 +72,7 @@ public class Java_Level_0 {
 	
 	//-----------------------------------------------------------------------------
 	//최대값 만들기(1)
-	public static String p_120847(int[] numbers) {
-		String msg = "";
+	public static void p_120847(int[] numbers) {
         int answer = 0;
         int max1 = Integer.MIN_VALUE;
         int max2 = Integer.MIN_VALUE;
@@ -85,11 +86,24 @@ public class Java_Level_0 {
             }
         }
         answer = max1*max2;
-        msg = "[p_120847] 최대값들의 곱 : " + answer ;
         System.out.println("[p_120847] 최대값들의 곱 : " + answer);
+    }
+	
+	//-----------------------------------------------------------------------------
+	//자릿수 더하기
+	public static void p_120906(int n) {
+        int answer = 0;
+        int last = 0;
         
-        return msg;
-        
+        while(n > 0){
+            if(n%10 >= 0){
+                last = n%10;
+                n = n/10;
+                answer += last;
+            } 
+        }
+
+        System.out.println("[p_120906] 자릿수 합 : " + answer);
     }
 
 }
