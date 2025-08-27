@@ -4,8 +4,8 @@
 <br>
 
 - **Solutions for coding test problems (Programmers, Baekjoon, etc.)**
-- **코딩 테스트 문제 풀이** 저장소입니다.  
-- 프로그래머스(Programmers) 문제를 단계별로 정리하고 있으며, 추후 백준(BOJ) 문제도 추가 예정입니다.
+- **코딩 테스트 문제 풀이**.  
+- 프로그래머스(Programmers) 문제를 단계별로 정리하고 있으며, 추후 백준(BOJ) 문제도 추가 예정.
 <br><br><br>
 
 ---
@@ -34,7 +34,7 @@
 ## 🛠 사용 언어
 
 - **Java**
-- Python (선택적)
+- Python (추후)
 <br><br><br>
 
 ---
