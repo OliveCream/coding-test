@@ -21,6 +21,9 @@ public class Java_Level_0 {
 		//자릿수 더하기
 		//p_120906(192803);
 		
+		//삼각형의 완성조건 (1)
+		p_120889(new int[] {5,12,8});
+		
 	}
 	
 	//----------------------------------------------------------------------------- 2025-08-21(목)
@@ -104,6 +107,21 @@ public class Java_Level_0 {
         }
 
         System.out.println("[p_120906] 자릿수 합 : " + answer);
+    }
+	
+	//-----------------------------------------------------------------------------
+	//삼각형의 완성조건 (1)
+	public static void p_120889(int[] sides) {
+        int answer = 0;
+        int max=0, sum=0;
+        
+        for(int i=0; i<3; i++){
+            sum += sides[i];
+            max = Math.max(max, sides[i]);
+        }
+        answer = max < sum-max ? 1 : 2;
+        
+        System.out.println("[p_120906] 삼각형의 완성조건(1) : " + answer);
     }
 
 }
