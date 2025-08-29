@@ -1,4 +1,5 @@
 package programmers;
+import java.util.*;
 
 public class Java_Level_0 {
 	
@@ -22,7 +23,13 @@ public class Java_Level_0 {
 		//p_120906(192803);
 		
 		//삼각형의 완성조건 (1)
-		p_120889(new int[] {5,12,8});
+		//p_120889(new int[] {5,12,8});
+		
+		//배열 자르기 (Lv.0) 
+		//p_120833(new int[] {5,12,8,7,9}, 1, 3);
+		
+		//피자 나눠 먹기 (3) (Lv.0)
+		p_120816﻿(12, 50);
 		
 	}
 	
@@ -123,5 +130,32 @@ public class Java_Level_0 {
         
         System.out.println("[p_120906] 삼각형의 완성조건(1) : " + answer);
     }
+
+	//-----------------------------------------------------------------------------
+	//배열 자르기 (Lv.0)
+	public static void p_120833(int[] numbers, int num1, int num2) {
+        int[] answer = {};
+        
+        int len = num2-num1+1;
+        answer = new int[len];
+        
+        for(int i=0; i<len; i++){
+            answer[i] = numbers[num1+i];
+        }
+        
+        System.out.println("[p_120906] 배열 자르기 (Lv.0) : " + Arrays.toString(answer));
+    }
+	
+	//-----------------------------------------------------------------------------
+	//피자 나눠 먹기 (3) (Lv.0)
+	public static void p_120816﻿(int slice, int n) {
+        int answer = 0;
+        
+        //answer = (int)Math.ceil((double) n/slice);
+        answer = (n + slice - 1)/slice;
+        
+        System.out.println("[p_120906] 피자 나눠 먹기 (3): " + answer);
+    }
+	
 
 }
