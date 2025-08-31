@@ -31,6 +31,9 @@ public class Java_Level_0 {
 		//피자 나눠 먹기 (3) (Lv.0)
 		p_120816﻿(12, 50);
 		
+		//문자열안에 문자열 (Lv.0)
+		p_120908(	"ab6CDE443fgh22iJKlmn1o", "6CD"); 
+		
 	}
 	
 	//----------------------------------------------------------------------------- 2025-08-21(목)
@@ -156,6 +159,17 @@ public class Java_Level_0 {
         
         System.out.println("[p_120906] 피자 나눠 먹기 (3): " + answer);
     }
+
+	//-----------------------------------------------------------------------------
+	//문자열안에 문자열 (Lv.0)
+	public static void p_120908(String str1, String str2) {
+        int answer = 2;
+        
+        if(str1.contains(str2)){
+            answer = 1;
+        }
+        System.out.println("[p_120908] 문자열안에 문자열 : " + answer);
+	}
 	
 
 }
