@@ -32,7 +32,10 @@ public class Java_Level_0 {
 		p_120816﻿(12, 50);
 		
 		//문자열안에 문자열 (Lv.0)
-		p_120908(	"ab6CDE443fgh22iJKlmn1o", "6CD"); 
+		//p_120908(	"ab6CDE443fgh22iJKlmn1o", "6CD");
+
+		//제곱수 판별하기 (Lv.0)
+		p_120909(16);
 		
 	}
 	
@@ -169,6 +172,20 @@ public class Java_Level_0 {
             answer = 1;
         }
         System.out.println("[p_120908] 문자열안에 문자열 : " + answer);
+	}
+	
+	//-----------------------------------------------------------------------------
+	//제곱수 판별하기 (Lv.0)
+	public static void p_120909(int n) {
+        int answer = 2;
+        
+        for(int i = 0 ; i <= 1000 ; i++){
+            if(i * i == n){
+                answer = 1;
+                break;
+            }
+        }
+        System.out.println("[p_120909] 제곱수 판별하기 : " + answer);
 	}
 	
 
