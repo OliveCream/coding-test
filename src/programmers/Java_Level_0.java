@@ -38,7 +38,10 @@ public class Java_Level_0 {
 		//p_120909(16);
 		
 		//중복된 숫자 개수 (Lv.0)
-		p_120583(new int[]{1,1,2,3,4,5}, 1);
+		//p_120583(new int[]{1,1,2,3,4,5}, 1);
+		
+		//배열 두 배 만들기 (Lv.0)
+		p_120809(new int[]{1,1,2,3,4,5});
 	}
 	
 	//----------------------------------------------------------------------------- 2025-08-21(목)
@@ -203,5 +206,16 @@ public class Java_Level_0 {
         System.out.println("[p_120583] 중복된 숫자 개수 : " + answer);
 	}
 	
+	//-----------------------------------------------------------------------------
+	//배열 두 배 만들기 (Lv.0)
+	public static void p_120809(int[] numbers) {
+        int[] answer = new int[numbers.length];
+        
+        for(int i=0; i < numbers.length; i++){
+            answer[i] = numbers[i] * 2;
+        }
+        System.out.println("[p_120809] 배열 두 배 만들기 : " + Arrays.toString(answer));
+	}
+
 
 }
