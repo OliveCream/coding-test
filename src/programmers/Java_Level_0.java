@@ -40,8 +40,8 @@ public class Java_Level_0 {
 		//중복된 숫자 개수 (Lv.0)
 		//p_120583(new int[]{1,1,2,3,4,5}, 1);
 		
-		//배열 두 배 만들기 (Lv.0)
-		p_120809(new int[]{1,1,2,3,4,5});
+		//중앙값 구하기 (Lv.0)
+		p_120811(new int[]{1,1,2,3,4,5,0});
 	}
 	
 	//----------------------------------------------------------------------------- 2025-08-21(목)
@@ -218,7 +218,31 @@ public class Java_Level_0 {
 	}
 	
 	//-----------------------------------------------------------------------------
-	//배열 두 배 만들기 (Lv.0)
+	//중앙값 구하기 (Lv.0)
+	public static void p_120811(int[] array) {
+        int answer = 0;
+        int tmp = 0;
+        
+        for(int i=0; i < array.length - 1; i++){
+            for(int j=i+1; j < array.length; j++)
+            if(array[j] < array[i]){
+                tmp = array[j];
+                array[j] = array[i];
+                array[i] = tmp;
+            }
+        }
+        
+        // Arrays.sort(array);  // Arrays사용해 오름차순 정렬
+        
+        // 배열 정렬 확인
+        // for(int val : array){
+        //     System.out.print(val + " ");
+        // }
+        
+        int midIdx = array.length/2;
+        answer = array[midIdx];
+        System.out.println("[p_120811] 배열 중앙값 구하기 : " + answer);
+	}
 
 
 }
