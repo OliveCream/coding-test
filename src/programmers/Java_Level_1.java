@@ -7,22 +7,7 @@ public class Java_Level_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-//		String s = "1 5 4 8 21";
-//		String answer = "";
-//		
-//		String sArray[] = null;
-//		
-//		sArray = s.split(" ");
-//		
-//		for(int i = 0; i < sArray.length; i++){
-//			int numArr[] = new int[sArray.length];
-//			
-//			numArr[i] = Integer.parseInt(sArray[i]);
-//
-////		    System.out.print(sArray[i] + " ");
-////		    System.out.print(numArr[i] + " ");
-//		    
-//		}
+
 		
 		//*** Lv.0 ***
 		//평균 구하기
