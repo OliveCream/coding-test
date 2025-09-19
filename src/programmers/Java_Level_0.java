@@ -49,6 +49,9 @@ public class Java_Level_0 {
 		//점의 위치 구하기
 		p_120841(new int[] {5,10});
 		
+		//배열의 유사도
+		p_120903(new String[]{"a","b","c"},new String[]{"com","b","d","p","c"});
+		
 	}
 	
 	//----------------------------------------------------------------------------- 2025-08-21(목)
@@ -268,6 +271,20 @@ public class Java_Level_0 {
             }
         }
         System.out.println("[p_120841] 점의 위치 구하기 : " + answer);
+	}
+	
+	//-----------------------------------------------------------------------------
+	//배열의 유사도
+	public static void p_120903(String[] s1, String[] s2) {
+        int answer = 0;
+        
+        for(int i=0; i < s1.length; i++){
+            for(int j=0; j < s2.length; j++){
+                if(s1[i].equals(s2[j]))
+                    answer++;
+            }
+        }
+        System.out.println("[p_120903] 배열의 유사도 : " + answer);
 	}
 	
 
