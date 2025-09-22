@@ -47,10 +47,10 @@ public class Java_Level_0 {
 		//p_120824(new int[]{1,1,2,3,4,5,0});
 		
 		//점의 위치 구하기
-		p_120841(new int[] {5,10});
+		//p_120841(new int[] {5,10});
 		
 		//배열의 유사도
-		p_120903(new String[]{"a","b","c"},new String[]{"com","b","d","p","c"});
+		//p_120903(new String[]{"a","b","c"},new String[]{"com","b","d","p","c"});
 		
 	}
 	
