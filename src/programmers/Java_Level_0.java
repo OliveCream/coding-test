@@ -51,6 +51,9 @@ public class Java_Level_0 {
 		
 		//배열의 유사도
 		//p_120903(new String[]{"a","b","c"},new String[]{"com","b","d","p","c"});
+
+		//순서쌍의 개수
+		p_120836(100);
 		
 	}
 	
@@ -285,6 +288,18 @@ public class Java_Level_0 {
             }
         }
         System.out.println("[p_120903] 배열의 유사도 : " + answer);
+	}
+	
+	//-----------------------------------------------------------------------------
+	//순서쌍의 개수
+	public static void p_120836(int n) {
+        int answer = 0;
+                
+        for(int a=1; a<=n; a++){
+            if(n%a == 0)
+                answer++;
+        }
+        System.out.println("[p_120836] 순서쌍의 개수 : " + answer);
 	}
 	
 
