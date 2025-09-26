@@ -23,14 +23,15 @@ public class Java_Level_1 {
 //		    
 //		}
 		
-		//*** Lv.0 ***
+		//*** Lv.1 ***
 		//평균 구하기
-		p_12944(new int[]{1,1,2,2,2});
+		//p_12944(new int[]{1,1,2,2,2});
 		
-		//평균 구하기
-		p_12947(15246);
+		//하샤드 수
+		//p_12947(15246);
 		
-		
+		//핸드폰 번호 가리기
+		p_12948("027778888");
 		
 
 	}
@@ -79,5 +80,25 @@ public class Java_Level_1 {
         System.out.println("[p_12947] 하샤드 수 : " + answer);
 	}
 
+	//-----------------------------------------------------------------------------
+	//핸드폰 번호 가리기	
+	public static void p_12948(String phone_number) {
+        char[] answer = phone_number.toCharArray();
+		for(int i=0;i<answer.length-4;i++){
+            answer[i] = '*';
+        }
+        
+		// String answer = phone_number;
+		// StringBuilder sb = new StringBuilder(answer);
+        //
+		// for(int i = 0 ; i < phone_number.length()-4 ; i++){
+		// sb.setCharAt(i, '*');
+		// answer = sb.toString();
+		// }
 
+        System.out.println("[p_12947] 하샤드 수 : " + String.valueOf(answer));
+	}
+
+	
+        
 }
