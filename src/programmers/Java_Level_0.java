@@ -53,7 +53,13 @@ public class Java_Level_0 {
 		//p_120903(new String[]{"a","b","c"},new String[]{"com","b","d","p","c"});
 
 		//순서쌍의 개수
-		p_120836(100);
+		//p_120836(100);
+		
+		//n의 배수 고르기
+		//p_120905(3, new int[]{4, 5, 6, 7, 8, 9, 10, 11, 12});
+		
+		//배열 원소의 길이
+		p_120854(new String[]{"We", "are", "the", "world!"});
 		
 	}
 	
@@ -301,13 +307,28 @@ public class Java_Level_0 {
         }
         System.out.println("[p_120836] 순서쌍의 개수 : " + answer);
 	}
+    
+	//-----------------------------------------------------------------------------
+	//n의 배수 고르기
+	public static void p_120905(int n, int[] numlist) {
+        int[] answer = Arrays.stream(numlist)
+                .filter(num -> num%n == 0)
+                .toArray();
+        
+        System.out.println("[p_120905] n의 배수 고르기 : " + Arrays.toString(answer));
+	}
 	
 	//-----------------------------------------------------------------------------
-    public int[] solution(int n, int[] numlist) {
-        int[] answer = Arrays.stream(numlist)
-                             .filter(num -> num%n == 0)
-                             .toArray();
-        return answer;
-    }
+	//배열 원소의 길이
+	public static void p_120854(String[] strlist) {
+        int[] answer = new int[strlist.length];
+        
+        for(int i=0; i<strlist.length; i++){
+            answer[i] = strlist[i].length();
+        }
+        
+        System.out.println("[p_120854] 배열 원소의 길이 : " + Arrays.toString(answer));
+	}
+    
 
 }
